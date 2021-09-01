@@ -1,8 +1,13 @@
-import { Heading, Page } from "@shopify/polaris";
+import { Page, Avatar, TextContainer } from "@shopify/polaris";
+import Link from "next/link";
 
 const Index = () => (
-  <Page>
-    <Heading>Shopify app with Node and React 🎉</Heading>
+  <Page fullWidth>
+    <TextContainer>
+      <Avatar customer name="Farrah" />
+      <p>Shopify app with Node and React 🎉!!!</p>
+      <Link href="/about">salve</Link>
+    </TextContainer>
   </Page>
 );
 
